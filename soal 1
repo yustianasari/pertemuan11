@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int A[10];
+    int bil;
+
+    for(int i=0; i<10; i++)
+    {
+        cout <<"Masukkan data ke "<<i+1<<"=";
+        cin >>A[i];
+    }
+
+    cout<<endl<<"Masukkan nilai yang dicari : ";
+    cin>>bil;
+    cout<<endl;
+
+    for(int j=0; j<10; j++)
+    {
+        if(A[j] == bil) {
+            cout << "Nilai yang dicari terdapat pada indeks ke-" << j+1;
+            cout << endl;
+        }
+    }
+    return 0;
+}
